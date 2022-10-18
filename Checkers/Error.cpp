@@ -3,3 +3,6 @@
 //
 
 #include "Error.h"
+void error(string Message){
+    throw Message;
+}

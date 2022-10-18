@@ -130,128 +130,128 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
+			"path" : "Checkers/main.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Error.cpp",
+			"path" : "Checkers/Error.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Error.h",
+			"path" : "Checkers/Error.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Button.cpp",
+			"path" : "Checkers/Button.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Button.h",
+			"path" : "Checkers/Button.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Filler.cpp",
+			"path" : "Checkers/Filler.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Filler.h",
+			"path" : "Checkers/Filler.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Square.cpp",
+			"path" : "Checkers/Square.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Square.h",
+			"path" : "Checkers/Square.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Constants.cpp",
+			"path" : "Checkers/Constants.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Constants.h",
+			"path" : "Checkers/Constants.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Game_Board.cpp",
+			"path" : "Checkers/Game_Board.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Game_Board.h",
+			"path" : "Checkers/Game_Board.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Checkers_Board.cpp",
+			"path" : "Checkers/Checkers_Board.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Checkers_Board.h",
+			"path" : "Checkers/Checkers_Board.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Checkers_Piece.cpp",
+			"path" : "Checkers/Checkers_Piece.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Checkers_Piece.h",
+			"path" : "Checkers/Checkers_Piece.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Checkers_Square.cpp",
+			"path" : "Checkers/Checkers_Square.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Checkers_Square.h",
+			"path" : "Checkers/Checkers_Square.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Checkers_Functions.cpp",
+			"path" : "Checkers/Checkers_Functions.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Checkers_Functions.h",
+			"path" : "Checkers/Checkers_Functions.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Checkers_Variables.cpp",
+			"path" : "Checkers/Checkers_Variables.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Checkers_Variables.h",
+			"path" : "Checkers/Checkers_Variables.h",
 			"sourceGroupIndex" : 1
 		}
 	],

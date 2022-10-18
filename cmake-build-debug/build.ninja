@@ -49,77 +49,77 @@ cmake_ninja_workdir = /home/devem/Escritorio/Checkers/cmake-build-debug/
 
 build cmake_object_order_depends_target_Checkers: phony || CMakeFiles/Checkers.dir
 
-build CMakeFiles/Checkers.dir/main.cpp.o: CXX_COMPILER__Checkers_Debug /home/devem/Escritorio/Checkers/main.cpp || cmake_object_order_depends_target_Checkers
-  DEP_FILE = CMakeFiles/Checkers.dir/main.cpp.o.d
+build CMakeFiles/Checkers.dir/Checkers/main.cpp.o: CXX_COMPILER__Checkers_Debug /home/devem/Escritorio/Checkers/Checkers/main.cpp || cmake_object_order_depends_target_Checkers
+  DEP_FILE = CMakeFiles/Checkers.dir/Checkers/main.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Checkers.dir
-  OBJECT_FILE_DIR = CMakeFiles/Checkers.dir
+  OBJECT_FILE_DIR = CMakeFiles/Checkers.dir/Checkers
 
-build CMakeFiles/Checkers.dir/Error.cpp.o: CXX_COMPILER__Checkers_Debug /home/devem/Escritorio/Checkers/Error.cpp || cmake_object_order_depends_target_Checkers
-  DEP_FILE = CMakeFiles/Checkers.dir/Error.cpp.o.d
+build CMakeFiles/Checkers.dir/Checkers/Error.cpp.o: CXX_COMPILER__Checkers_Debug /home/devem/Escritorio/Checkers/Checkers/Error.cpp || cmake_object_order_depends_target_Checkers
+  DEP_FILE = CMakeFiles/Checkers.dir/Checkers/Error.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Checkers.dir
-  OBJECT_FILE_DIR = CMakeFiles/Checkers.dir
+  OBJECT_FILE_DIR = CMakeFiles/Checkers.dir/Checkers
 
-build CMakeFiles/Checkers.dir/Button.cpp.o: CXX_COMPILER__Checkers_Debug /home/devem/Escritorio/Checkers/Button.cpp || cmake_object_order_depends_target_Checkers
-  DEP_FILE = CMakeFiles/Checkers.dir/Button.cpp.o.d
+build CMakeFiles/Checkers.dir/Checkers/Button.cpp.o: CXX_COMPILER__Checkers_Debug /home/devem/Escritorio/Checkers/Checkers/Button.cpp || cmake_object_order_depends_target_Checkers
+  DEP_FILE = CMakeFiles/Checkers.dir/Checkers/Button.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Checkers.dir
-  OBJECT_FILE_DIR = CMakeFiles/Checkers.dir
+  OBJECT_FILE_DIR = CMakeFiles/Checkers.dir/Checkers
 
-build CMakeFiles/Checkers.dir/Filler.cpp.o: CXX_COMPILER__Checkers_Debug /home/devem/Escritorio/Checkers/Filler.cpp || cmake_object_order_depends_target_Checkers
-  DEP_FILE = CMakeFiles/Checkers.dir/Filler.cpp.o.d
+build CMakeFiles/Checkers.dir/Checkers/Filler.cpp.o: CXX_COMPILER__Checkers_Debug /home/devem/Escritorio/Checkers/Checkers/Filler.cpp || cmake_object_order_depends_target_Checkers
+  DEP_FILE = CMakeFiles/Checkers.dir/Checkers/Filler.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Checkers.dir
-  OBJECT_FILE_DIR = CMakeFiles/Checkers.dir
+  OBJECT_FILE_DIR = CMakeFiles/Checkers.dir/Checkers
 
-build CMakeFiles/Checkers.dir/Square.cpp.o: CXX_COMPILER__Checkers_Debug /home/devem/Escritorio/Checkers/Square.cpp || cmake_object_order_depends_target_Checkers
-  DEP_FILE = CMakeFiles/Checkers.dir/Square.cpp.o.d
+build CMakeFiles/Checkers.dir/Checkers/Square.cpp.o: CXX_COMPILER__Checkers_Debug /home/devem/Escritorio/Checkers/Checkers/Square.cpp || cmake_object_order_depends_target_Checkers
+  DEP_FILE = CMakeFiles/Checkers.dir/Checkers/Square.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Checkers.dir
-  OBJECT_FILE_DIR = CMakeFiles/Checkers.dir
+  OBJECT_FILE_DIR = CMakeFiles/Checkers.dir/Checkers
 
-build CMakeFiles/Checkers.dir/Constants.cpp.o: CXX_COMPILER__Checkers_Debug /home/devem/Escritorio/Checkers/Constants.cpp || cmake_object_order_depends_target_Checkers
-  DEP_FILE = CMakeFiles/Checkers.dir/Constants.cpp.o.d
+build CMakeFiles/Checkers.dir/Checkers/Constants.cpp.o: CXX_COMPILER__Checkers_Debug /home/devem/Escritorio/Checkers/Checkers/Constants.cpp || cmake_object_order_depends_target_Checkers
+  DEP_FILE = CMakeFiles/Checkers.dir/Checkers/Constants.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Checkers.dir
-  OBJECT_FILE_DIR = CMakeFiles/Checkers.dir
+  OBJECT_FILE_DIR = CMakeFiles/Checkers.dir/Checkers
 
-build CMakeFiles/Checkers.dir/Game_Board.cpp.o: CXX_COMPILER__Checkers_Debug /home/devem/Escritorio/Checkers/Game_Board.cpp || cmake_object_order_depends_target_Checkers
-  DEP_FILE = CMakeFiles/Checkers.dir/Game_Board.cpp.o.d
+build CMakeFiles/Checkers.dir/Checkers/Game_Board.cpp.o: CXX_COMPILER__Checkers_Debug /home/devem/Escritorio/Checkers/Checkers/Game_Board.cpp || cmake_object_order_depends_target_Checkers
+  DEP_FILE = CMakeFiles/Checkers.dir/Checkers/Game_Board.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Checkers.dir
-  OBJECT_FILE_DIR = CMakeFiles/Checkers.dir
+  OBJECT_FILE_DIR = CMakeFiles/Checkers.dir/Checkers
 
-build CMakeFiles/Checkers.dir/Checkers_Board.cpp.o: CXX_COMPILER__Checkers_Debug /home/devem/Escritorio/Checkers/Checkers_Board.cpp || cmake_object_order_depends_target_Checkers
-  DEP_FILE = CMakeFiles/Checkers.dir/Checkers_Board.cpp.o.d
+build CMakeFiles/Checkers.dir/Checkers/Checkers_Board.cpp.o: CXX_COMPILER__Checkers_Debug /home/devem/Escritorio/Checkers/Checkers/Checkers_Board.cpp || cmake_object_order_depends_target_Checkers
+  DEP_FILE = CMakeFiles/Checkers.dir/Checkers/Checkers_Board.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Checkers.dir
-  OBJECT_FILE_DIR = CMakeFiles/Checkers.dir
+  OBJECT_FILE_DIR = CMakeFiles/Checkers.dir/Checkers
 
-build CMakeFiles/Checkers.dir/Checkers_Piece.cpp.o: CXX_COMPILER__Checkers_Debug /home/devem/Escritorio/Checkers/Checkers_Piece.cpp || cmake_object_order_depends_target_Checkers
-  DEP_FILE = CMakeFiles/Checkers.dir/Checkers_Piece.cpp.o.d
+build CMakeFiles/Checkers.dir/Checkers/Checkers_Piece.cpp.o: CXX_COMPILER__Checkers_Debug /home/devem/Escritorio/Checkers/Checkers/Checkers_Piece.cpp || cmake_object_order_depends_target_Checkers
+  DEP_FILE = CMakeFiles/Checkers.dir/Checkers/Checkers_Piece.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Checkers.dir
-  OBJECT_FILE_DIR = CMakeFiles/Checkers.dir
+  OBJECT_FILE_DIR = CMakeFiles/Checkers.dir/Checkers
 
-build CMakeFiles/Checkers.dir/Checkers_Square.cpp.o: CXX_COMPILER__Checkers_Debug /home/devem/Escritorio/Checkers/Checkers_Square.cpp || cmake_object_order_depends_target_Checkers
-  DEP_FILE = CMakeFiles/Checkers.dir/Checkers_Square.cpp.o.d
+build CMakeFiles/Checkers.dir/Checkers/Checkers_Square.cpp.o: CXX_COMPILER__Checkers_Debug /home/devem/Escritorio/Checkers/Checkers/Checkers_Square.cpp || cmake_object_order_depends_target_Checkers
+  DEP_FILE = CMakeFiles/Checkers.dir/Checkers/Checkers_Square.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Checkers.dir
-  OBJECT_FILE_DIR = CMakeFiles/Checkers.dir
+  OBJECT_FILE_DIR = CMakeFiles/Checkers.dir/Checkers
 
-build CMakeFiles/Checkers.dir/Checkers_Functions.cpp.o: CXX_COMPILER__Checkers_Debug /home/devem/Escritorio/Checkers/Checkers_Functions.cpp || cmake_object_order_depends_target_Checkers
-  DEP_FILE = CMakeFiles/Checkers.dir/Checkers_Functions.cpp.o.d
+build CMakeFiles/Checkers.dir/Checkers/Checkers_Functions.cpp.o: CXX_COMPILER__Checkers_Debug /home/devem/Escritorio/Checkers/Checkers/Checkers_Functions.cpp || cmake_object_order_depends_target_Checkers
+  DEP_FILE = CMakeFiles/Checkers.dir/Checkers/Checkers_Functions.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Checkers.dir
-  OBJECT_FILE_DIR = CMakeFiles/Checkers.dir
+  OBJECT_FILE_DIR = CMakeFiles/Checkers.dir/Checkers
 
-build CMakeFiles/Checkers.dir/Checkers_Variables.cpp.o: CXX_COMPILER__Checkers_Debug /home/devem/Escritorio/Checkers/Checkers_Variables.cpp || cmake_object_order_depends_target_Checkers
-  DEP_FILE = CMakeFiles/Checkers.dir/Checkers_Variables.cpp.o.d
+build CMakeFiles/Checkers.dir/Checkers/Checkers_Variables.cpp.o: CXX_COMPILER__Checkers_Debug /home/devem/Escritorio/Checkers/Checkers/Checkers_Variables.cpp || cmake_object_order_depends_target_Checkers
+  DEP_FILE = CMakeFiles/Checkers.dir/Checkers/Checkers_Variables.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Checkers.dir
-  OBJECT_FILE_DIR = CMakeFiles/Checkers.dir
+  OBJECT_FILE_DIR = CMakeFiles/Checkers.dir/Checkers
 
 
 # =============================================================================
@@ -129,7 +129,7 @@ build CMakeFiles/Checkers.dir/Checkers_Variables.cpp.o: CXX_COMPILER__Checkers_D
 #############################################
 # Link the executable Checkers
 
-build Checkers: CXX_EXECUTABLE_LINKER__Checkers_Debug CMakeFiles/Checkers.dir/main.cpp.o CMakeFiles/Checkers.dir/Error.cpp.o CMakeFiles/Checkers.dir/Button.cpp.o CMakeFiles/Checkers.dir/Filler.cpp.o CMakeFiles/Checkers.dir/Square.cpp.o CMakeFiles/Checkers.dir/Constants.cpp.o CMakeFiles/Checkers.dir/Game_Board.cpp.o CMakeFiles/Checkers.dir/Checkers_Board.cpp.o CMakeFiles/Checkers.dir/Checkers_Piece.cpp.o CMakeFiles/Checkers.dir/Checkers_Square.cpp.o CMakeFiles/Checkers.dir/Checkers_Functions.cpp.o CMakeFiles/Checkers.dir/Checkers_Variables.cpp.o
+build Checkers: CXX_EXECUTABLE_LINKER__Checkers_Debug CMakeFiles/Checkers.dir/Checkers/main.cpp.o CMakeFiles/Checkers.dir/Checkers/Error.cpp.o CMakeFiles/Checkers.dir/Checkers/Button.cpp.o CMakeFiles/Checkers.dir/Checkers/Filler.cpp.o CMakeFiles/Checkers.dir/Checkers/Square.cpp.o CMakeFiles/Checkers.dir/Checkers/Constants.cpp.o CMakeFiles/Checkers.dir/Checkers/Game_Board.cpp.o CMakeFiles/Checkers.dir/Checkers/Checkers_Board.cpp.o CMakeFiles/Checkers.dir/Checkers/Checkers_Piece.cpp.o CMakeFiles/Checkers.dir/Checkers/Checkers_Square.cpp.o CMakeFiles/Checkers.dir/Checkers/Checkers_Functions.cpp.o CMakeFiles/Checkers.dir/Checkers/Checkers_Variables.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Checkers.dir
   POST_BUILD = :

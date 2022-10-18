@@ -4,11 +4,9 @@
 
 #ifndef CHECKERS_ERROR_H
 #define CHECKERS_ERROR_H
-
-
-class Error {
-
-};
+#include <string>
+using namespace std;
+void error(string Message);
 
 
 #endif //CHECKERS_ERROR_H
