@@ -3,16 +3,14 @@
 #include <iostream>
 
 #include <SFML/Graphics.hpp>
-#include <SFML/Audio.hpp>
 #include <SFML/System.hpp>
 #include <SFML/Window.hpp>
-#include <SFML/Network.hpp>
 
 class Board {
 public:
     int size = 8;
 
-    void Draw(sf::RenderWindow& window) {
+    void Draw(sf::RenderWindow& window) const {
         sf::RectangleShape tile;
         tile.setSize(sf::Vector2f(75.f, 75.f));
         for (int i = 0;i < size;i++) {
@@ -29,7 +27,7 @@ public:
         }
     }
 
-    void Highlight(sf::RenderWindow& window, int x, int y) {
+    static void Highlight(sf::RenderWindow& window, int x, int y) {
         sf::RectangleShape tile;
         tile.setSize(sf::Vector2f(75.f, 75.f));
         tile.setFillColor(sf::Color::Green);
@@ -41,13 +39,13 @@ public:
 class Piece {
 public:
     float radius = 30;
-    int x;
-    int y;
-    bool isAlive;
+    int x{};
+    int y{};
+    bool isAlive{};
     bool isKing = false;
     sf::Color color;
 
-    void Draw(sf::RenderWindow& window) {
+    void Draw(sf::RenderWindow& window) const {
         if (isAlive) {
             sf::CircleShape shape(radius);
             shape.setFillColor(color);
@@ -97,89 +95,88 @@ Piece* FindPiece(int x, int y, Piece* RedPieces, Piece* WhitePieces) {
             }
         }
     }
-    return NULL;
+    return nullptr;
 }
 
 void KillPiece(int x, int y, Piece* RedPieces, Piece* WhitePieces, int *turn) {
     FindPiece(x, y, RedPieces, WhitePieces)->isAlive = false;
     *turn = ((*turn == 1) ? 2 : 1);
-    return;
 }
 
 int MovePiece(int x, int y, Piece* s_Piece, Piece* RedPieces, Piece* WhitePieces, int *turn) {
-        if (s_Piece->color == sf::Color::Red || s_Piece->color == sf::Color::White && s_Piece->isKing) {
-            if (x == s_Piece->x - 1 && y == s_Piece->y - 1) {
-                if (!FindPiece(x, y, RedPieces, WhitePieces)) {
-                    *turn = ((*turn == 1) ? 2 : 1);
-                    s_Piece->x = x;
-                    s_Piece->y = y;
-                    return 1;
-                }
-            }
-            if (x == s_Piece->x + 1 && y == s_Piece->y - 1) {
-                if (!FindPiece(x, y, RedPieces, WhitePieces)) {
-                    *turn = ((*turn == 1) ? 2 : 1);
-                    s_Piece->x = x;
-                    s_Piece->y = y;
-                    return 1;
-                }
-            }
-            if (x == s_Piece->x - 2 && y == s_Piece->y - 2) {
-                if (!FindPiece(x, y, RedPieces, WhitePieces) && FindPiece(x+1,y+1,RedPieces, WhitePieces) != NULL && FindPiece(x + 1, y + 1, RedPieces, WhitePieces)->color != s_Piece->color) {
-                    *turn = ((*turn == 1) ? 2 : 1);
-                    KillPiece(x + 1, y + 1, RedPieces, WhitePieces, turn);
-                    s_Piece->x = x;
-                    s_Piece->y = y;
-                    return 1;
-                }
-            }
-            if (x == s_Piece->x + 2 && y == s_Piece->y - 2) {
-                if (!FindPiece(x, y, RedPieces, WhitePieces) && FindPiece(x - 1, y + 1, RedPieces, WhitePieces) != NULL && FindPiece(x - 1, y + 1, RedPieces, WhitePieces)->color != s_Piece->color) {
-                    *turn = ((*turn == 1) ? 2 : 1);
-                    KillPiece(x - 1, y + 1, RedPieces, WhitePieces, turn);
-                    s_Piece->x = x;
-                    s_Piece->y = y;
-                    return 1;
-                }
+    if (s_Piece->color == sf::Color::Red || s_Piece->color == sf::Color::White && s_Piece->isKing) {
+        if (x == s_Piece->x - 1 && y == s_Piece->y - 1) {
+            if (!FindPiece(x, y, RedPieces, WhitePieces)) {
+                *turn = ((*turn == 1) ? 2 : 1);
+                s_Piece->x = x;
+                s_Piece->y = y;
+                return 1;
             }
         }
-        if (s_Piece->color == sf::Color::White || s_Piece->color == sf::Color::Red && s_Piece->isKing) {
-            if (x == s_Piece->x - 1 && y == s_Piece->y + 1) {
-                if (!FindPiece(x, y, RedPieces, WhitePieces)) {
-                    *turn = ((*turn == 1) ? 2 : 1);
-                    s_Piece->x = x;
-                    s_Piece->y = y;
-                    return 1;
-                }
-            }
-            if (x == s_Piece->x + 1 && y == s_Piece->y + 1) {
-                if (!FindPiece(x, y, RedPieces, WhitePieces)) {
-                    *turn = ((*turn == 1) ? 2 : 1);
-                    s_Piece->x = x;
-                    s_Piece->y = y;
-                    return 1;
-                }
-            }
-            if (x == s_Piece->x - 2 && y == s_Piece->y + 2) {
-                if (!FindPiece(x, y, RedPieces, WhitePieces) && FindPiece(x + 1, y - 1, RedPieces, WhitePieces) != NULL && FindPiece(x + 1, y - 1, RedPieces, WhitePieces)->color != s_Piece->color) {
-                    *turn = ((*turn == 1) ? 2 : 1);
-                    s_Piece->x = x;
-                    s_Piece->y = y;
-                    KillPiece(x + 1, y - 1, RedPieces, WhitePieces, turn);
-                    return 1;
-                }
-            }
-            if (x == s_Piece->x + 2 && y == s_Piece->y + 2) {
-                if (!FindPiece(x, y, RedPieces, WhitePieces) && FindPiece(x - 1, y - 1, RedPieces, WhitePieces) != NULL && FindPiece(x - 1, y - 1, RedPieces, WhitePieces)->color != s_Piece->color) {
-                    *turn = ((*turn == 1) ? 2 : 1);
-                    s_Piece->x = x;
-                    s_Piece->y = y;
-                    KillPiece(x - 1, y - 1, RedPieces, WhitePieces, turn);
-                    return 1;
-                }
+        if (x == s_Piece->x + 1 && y == s_Piece->y - 1) {
+            if (!FindPiece(x, y, RedPieces, WhitePieces)) {
+                *turn = ((*turn == 1) ? 2 : 1);
+                s_Piece->x = x;
+                s_Piece->y = y;
+                return 1;
             }
         }
-        return 0;
+        if (x == s_Piece->x - 2 && y == s_Piece->y - 2) {
+            if (!FindPiece(x, y, RedPieces, WhitePieces) && FindPiece(x+1,y+1,RedPieces, WhitePieces) != NULL && FindPiece(x + 1, y + 1, RedPieces, WhitePieces)->color != s_Piece->color) {
+                *turn = ((*turn == 1) ? 2 : 1);
+                KillPiece(x + 1, y + 1, RedPieces, WhitePieces, turn);
+                s_Piece->x = x;
+                s_Piece->y = y;
+                return 1;
+            }
+        }
+        if (x == s_Piece->x + 2 && y == s_Piece->y - 2) {
+            if (!FindPiece(x, y, RedPieces, WhitePieces) && FindPiece(x - 1, y + 1, RedPieces, WhitePieces) != NULL && FindPiece(x - 1, y + 1, RedPieces, WhitePieces)->color != s_Piece->color) {
+                *turn = ((*turn == 1) ? 2 : 1);
+                KillPiece(x - 1, y + 1, RedPieces, WhitePieces, turn);
+                s_Piece->x = x;
+                s_Piece->y = y;
+                return 1;
+            }
+        }
+    }
+    if (s_Piece->color == sf::Color::White || s_Piece->color == sf::Color::Red && s_Piece->isKing) {
+        if (x == s_Piece->x - 1 && y == s_Piece->y + 1) {
+            if (!FindPiece(x, y, RedPieces, WhitePieces)) {
+                *turn = ((*turn == 1) ? 2 : 1);
+                s_Piece->x = x;
+                s_Piece->y = y;
+                return 1;
+            }
+        }
+        if (x == s_Piece->x + 1 && y == s_Piece->y + 1) {
+            if (!FindPiece(x, y, RedPieces, WhitePieces)) {
+                *turn = ((*turn == 1) ? 2 : 1);
+                s_Piece->x = x;
+                s_Piece->y = y;
+                return 1;
+            }
+        }
+        if (x == s_Piece->x - 2 && y == s_Piece->y + 2) {
+            if (!FindPiece(x, y, RedPieces, WhitePieces) && FindPiece(x + 1, y - 1, RedPieces, WhitePieces) != NULL && FindPiece(x + 1, y - 1, RedPieces, WhitePieces)->color != s_Piece->color) {
+                *turn = ((*turn == 1) ? 2 : 1);
+                s_Piece->x = x;
+                s_Piece->y = y;
+                KillPiece(x + 1, y - 1, RedPieces, WhitePieces, turn);
+                return 1;
+            }
+        }
+        if (x == s_Piece->x + 2 && y == s_Piece->y + 2) {
+            if (!FindPiece(x, y, RedPieces, WhitePieces) && FindPiece(x - 1, y - 1, RedPieces, WhitePieces) != NULL && FindPiece(x - 1, y - 1, RedPieces, WhitePieces)->color != s_Piece->color) {
+                *turn = ((*turn == 1) ? 2 : 1);
+                s_Piece->x = x;
+                s_Piece->y = y;
+                KillPiece(x - 1, y - 1, RedPieces, WhitePieces, turn);
+                return 1;
+            }
+        }
+    }
+    return 0;
 }
 
 int main()
@@ -187,7 +184,7 @@ int main()
     sf::ContextSettings settings;
     settings.antialiasingLevel = 16.0;
     sf::RenderWindow window(sf::VideoMode(600, 600), "Checkers", sf::Style::Default, settings);
-    sf::Event event;
+    sf::Event event{};
     Board board;
     int grid[8][8];
     Piece RedPieces[12];
@@ -222,7 +219,7 @@ int main()
         board.Draw(window);
 
         if (SelectedPiece != NULL) {
-            board.Highlight(window, SelectedPiece->x, SelectedPiece->y);
+            Board::Highlight(window, SelectedPiece->x, SelectedPiece->y);
         }
 
         for (int i = 0;i < 12;i++) {

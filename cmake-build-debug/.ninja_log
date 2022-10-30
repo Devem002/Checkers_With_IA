@@ -1,0 +1,15 @@
+# ninja log v5
+2	954	1667108281207690778	CMakeFiles/Checkers.dir/Checkers/Setup.cpp.o	86ced444e3d107f6
+786	915	1667108415249443224	Checkers	f6990a771d06f866
+0	1265	1667106447069722202	CMakeFiles/Checkers.dir/Checkers/Board.cpp.o	17152e0c27ed54f1
+979	1581	1667108281831699282	CMakeFiles/Checkers.dir/Checkers/MovePiece.cpp.o	4bf4ead6d8a9cb9a
+1	786	1667108415121441617	CMakeFiles/Checkers.dir/Checkers/main.cpp.o	bb046540cde4e92
+2	983	1667108281239691215	CMakeFiles/Checkers.dir/Checkers/Piece.cpp.o	ce3a230fc161f972
+2	709	1667108354988672884	CMakeFiles/Checkers.dir/Checkers/KillPiece.cpp.o	40e6c4b93178e8d3
+0	36	1667108596999625101	build.ninja	6441cea598da8a7c
+0	895	1667108597903635503	CMakeFiles/Checkers.dir/Checkers/main.cpp.o	bb046540cde4e92
+895	1039	1667108598043637109	Checkers	99864db50af972b6
+1	575	1667108830674199323	CMakeFiles/Checkers.dir/Checkers/main.cpp.o	bb046540cde4e92
+575	664	1667108830758200212	Checkers	99864db50af972b6
+1	867	1667109195965905733	CMakeFiles/Checkers.dir/Checkers/main.cpp.o	bb046540cde4e92
+868	1013	1667109196109907145	Checkers	99864db50af972b6
