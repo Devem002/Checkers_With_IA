@@ -5,6 +5,7 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 #include <SFML/Window.hpp>
+#include "Start.h"
 
 class Board {
 public:
@@ -179,7 +180,7 @@ int MovePiece(int x, int y, Piece* s_Piece, Piece* RedPieces, Piece* WhitePieces
     return 0;
 }
 
-int main()
+int Start::init()
 {
     sf::ContextSettings settings;
     settings.antialiasingLevel = 16.0;

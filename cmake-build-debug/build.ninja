@@ -49,8 +49,15 @@ cmake_ninja_workdir = /home/devem/Escritorio/Checkers/cmake-build-debug/
 
 build cmake_object_order_depends_target_Checkers: phony || CMakeFiles/Checkers.dir
 
-build CMakeFiles/Checkers.dir/Checkers/main.cpp.o: CXX_COMPILER__Checkers_Debug /home/devem/Escritorio/Checkers/Checkers/main.cpp || cmake_object_order_depends_target_Checkers
-  DEP_FILE = CMakeFiles/Checkers.dir/Checkers/main.cpp.o.d
+build CMakeFiles/Checkers.dir/Checkers/Start.cpp.o: CXX_COMPILER__Checkers_Debug /home/devem/Escritorio/Checkers/Checkers/Start.cpp || cmake_object_order_depends_target_Checkers
+  DEP_FILE = CMakeFiles/Checkers.dir/Checkers/Start.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/devem/Escritorio/Checkers/SFML_INCLUDE_DIR
+  OBJECT_DIR = CMakeFiles/Checkers.dir
+  OBJECT_FILE_DIR = CMakeFiles/Checkers.dir/Checkers
+
+build CMakeFiles/Checkers.dir/Checkers/Main.cpp.o: CXX_COMPILER__Checkers_Debug /home/devem/Escritorio/Checkers/Checkers/Main.cpp || cmake_object_order_depends_target_Checkers
+  DEP_FILE = CMakeFiles/Checkers.dir/Checkers/Main.cpp.o.d
   FLAGS = -g
   INCLUDES = -I/home/devem/Escritorio/Checkers/SFML_INCLUDE_DIR
   OBJECT_DIR = CMakeFiles/Checkers.dir
@@ -64,7 +71,7 @@ build CMakeFiles/Checkers.dir/Checkers/main.cpp.o: CXX_COMPILER__Checkers_Debug 
 #############################################
 # Link the executable Checkers
 
-build Checkers: CXX_EXECUTABLE_LINKER__Checkers_Debug CMakeFiles/Checkers.dir/Checkers/main.cpp.o | /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
+build Checkers: CXX_EXECUTABLE_LINKER__Checkers_Debug CMakeFiles/Checkers.dir/Checkers/Start.cpp.o CMakeFiles/Checkers.dir/Checkers/Main.cpp.o | /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
   FLAGS = -g
   LINK_LIBRARIES = -Wl,-rpath,/home/devem/Escritorio/Checkers/SFML_LIBRARY_DIR  /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
   LINK_PATH = -L/home/devem/Escritorio/Checkers/SFML_LIBRARY_DIR

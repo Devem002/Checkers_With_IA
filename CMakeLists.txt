@@ -18,5 +18,5 @@ if(SFML_FOUND)
     message(STATUS "SFML_VERSION: ${SFML_VERSION}")
 endif()
 
-add_executable(Checkers Checkers/main.cpp)
+add_executable(Checkers Checkers/Start.cpp Checkers/Main.cpp Checkers/Start.h)
 target_link_libraries (Checkers sfml-graphics sfml-window sfml-system)
