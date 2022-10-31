@@ -18,10 +18,10 @@ public:
             for (int j = 0;j < size;j++) {
                 tile.setPosition(sf::Vector2f(75 * i, 75 * j));
                 if ((i + j) % 2 == 0) {
-                    tile.setFillColor(sf::Color::White);
+                    tile.setFillColor(sf::Color(64,64,64,255));
                 }
                 else {
-                    tile.setFillColor(sf::Color(55, 204, 179, 255));
+                    tile.setFillColor(sf::Color(196, 157, 0, 255));
                 }
                 window.draw(tile);
             }
@@ -196,7 +196,7 @@ int Start::init()
 
     for (int i = 0;i < 12;i++) {
         WhitePieces[i].color = sf::Color::White;
-        RedPieces[i].color = sf::Color::Red;
+        RedPieces[i].color = sf::Color::Black;
     }
 
 
