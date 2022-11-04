@@ -1,22 +1,15 @@
-cmake_minimum_required(VERSION 3.23)
+cmake_minimum_required(VERSION 3.7)
+
 project(Checkers)
-
 set(CMAKE_CXX_STANDARD 14)
-set(CMAKE_CXX_STANDARD 14)
-set(SFML_INCLUDE_DIR "/home/rewieer/Libraries/SFML-2.5.1/include")
-set(SFML_LIBRARY_DIR "/home/rewieer/Libraries/SFML-2.5.1/lib")
-set(SFML_DIR "/home/rewieer/Libraries/SFML-2.5.1/lib/cmake/SFML")
 
-link_directories(SFML_LIBRARY_DIR)
-include_directories(SFML_INCLUDE_DIR)
+set(SDL2_INCLUDE_DIR C:/CLION/SDL/include)
+set(SDL2_LIB_DIR C:/CLION/SDL/lib/x86)
 
-find_package(SFML 2.5.1 COMPONENTS system window graphics network audio)
+include_directories(${SDL2_INCLUDE_DIR})
+link_directories(${SDL2_LIB_DIR})
 
-if(SFML_FOUND)
-    message(STATUS "SFML_INCLUDE_DIR: ${SFML_INCLUDE_DIR}")
-    message(STATUS "SFML_LIBRARIES: ${SFML_LIBRARIES}")
-    message(STATUS "SFML_VERSION: ${SFML_VERSION}")
-endif()
-
-add_executable(Checkers Checkers/Start.cpp Checkers/Main.cpp Checkers/Start.h)
-target_link_libraries (Checkers sfml-graphics sfml-window sfml-system)
+add_executable(Checkers Main.cpp utils/sdlfunctions.cpp objects/Drawable.cpp objects/Game.cpp objects/Piece.cpp objects/Player.cpp
+        objects/Table.cpp objects/Table.cpp objects/TableBase.cpp objects/players/AI.cpp objects/players/AImove.cpp objects/players/AITable.cpp
+        objects/players/Human.cpp)
+target_link_libraries(${PROJECT_NAME} SDL2main SDL2)

@@ -1,3 +1,3 @@
-/home/devem/Escritorio/Checkers/cmake-build-debug/CMakeFiles/Checkers.dir
-/home/devem/Escritorio/Checkers/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/devem/Escritorio/Checkers/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/diego/Desktop/Checkers/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/diego/Desktop/Checkers/cmake-build-debug/CMakeFiles/Checkers.dir
+C:/Users/diego/Desktop/Checkers/cmake-build-debug/CMakeFiles/edit_cache.dir

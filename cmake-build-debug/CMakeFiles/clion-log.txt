@@ -1,8 +1,4 @@
-/snap/clion/209/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/209/bin/ninja/linux/ninja -G Ninja -S /home/devem/Escritorio/Checkers -B /home/devem/Escritorio/Checkers/cmake-build-debug
--- Found SFML 2.5.1 in /usr/lib/x86_64-linux-gnu/cmake/SFML
--- SFML_INCLUDE_DIR: /home/rewieer/Libraries/SFML-2.5.1/include
--- SFML_LIBRARIES: 
--- SFML_VERSION: 2.5.1
+"C:\Program Files\JetBrains\CLion 2021.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - MinGW Makefiles" C:\Users\diego\Desktop\Checkers
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/devem/Escritorio/Checkers/cmake-build-debug
+-- Build files have been written to: C:/Users/diego/Desktop/Checkers/cmake-build-debug
