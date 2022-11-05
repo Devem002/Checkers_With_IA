@@ -1,10 +1,3 @@
-/*
- * Player.h
- *
- *  Created on: 26 juil. 2015
- *      Author: filipe
- */
-
 #ifndef PLAYER_H_
 #define PLAYER_H_
 
@@ -39,4 +32,4 @@ public:
 	bool isHuman();
 };
 
-#endif /* PLAYER_H_ */
+#endif

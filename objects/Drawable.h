@@ -1,10 +1,3 @@
-/*
- * Drawable.h
- *
- *  Created on: 21 juil. 2015
- *      Author: filipe
- */
-
 #ifndef DRAWABLE_H_
 #define DRAWABLE_H_
 
@@ -34,4 +27,4 @@ public:
 	virtual ~Drawable();
 };
 
-#endif /* DRAWABLE_H_ */
+#endif

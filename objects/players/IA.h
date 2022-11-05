@@ -1,10 +1,3 @@
-/*
- * AI.h
- *
- *  Created on: 2 août 2015
- *      Author: filipe
- */
-
 #ifndef AI_H_
 #define AI_H_
 
@@ -12,7 +5,7 @@
 #include "../Piece.h"
 #include <iostream>
 #include <vector>
-#include "AITable.h"
+#include "IATable.h"
 
 using namespace std;
 
@@ -60,4 +53,4 @@ public:
 	AImove* getBestMove (vector<AImove *> &moveList, int layer, int maxLayer);
 };
 
-#endif /* AI_H_ */
+#endif

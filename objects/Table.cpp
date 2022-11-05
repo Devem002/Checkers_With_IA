@@ -1,10 +1,3 @@
-/*
- * Table.cpp
- *
- *  Created on: 21 juil. 2015
- *      Author: filipe
- */
-
 #include "Table.h"
 #include <iostream>
 #include <cmath>

@@ -17,7 +17,7 @@ void Drawable::loadIMG(string filename, string id) {
     	cout<<SDL_GetError()<<flush<<endl;
 
     }
-    surfaces[id] = loadedSurface;// optimizedSurface;
+    surfaces[id] = loadedSurface;
     return ;
 }
 
@@ -25,7 +25,7 @@ void Drawable::applySurface(int x, int y, string id, SDL_Surface* destination) {
     SDL_Rect offset;
     offset.x = x;
     offset.y = y;
-    // Blit the surface:
+
     SDL_BlitSurface(surfaces[id], NULL, destination, &offset);
 }
 
@@ -34,7 +34,7 @@ Drawable::Drawable(){
 }
 
 Drawable::~Drawable(){
-	//clean memory
+	// Libera la memoria
 	for(map<string, SDL_Surface*>::iterator it = surfaces.begin(); it != surfaces.end(); it++){
 		if(it->second != NULL)
 			SDL_FreeSurface(it->second);

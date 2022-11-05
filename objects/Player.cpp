@@ -1,10 +1,3 @@
-/*
- * Player.cpp
- *
- *  Created on: 26 juil. 2015
- *      Author: filipe
- */
-
 #include "Player.h"
 #include "Table.h"
 

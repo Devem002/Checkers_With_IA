@@ -1,11 +1,4 @@
-/*
- * AITable.cpp
- *
- *  Created on: Oct 19, 2015
- *      Author: fcaldas
- */
-
-#include "AITable.h"
+#include "IATable.h"
 
 AITable::AITable(TableBase &t): TableBase(WHITE) {
 	this->pcBlack = t.pcBlack;

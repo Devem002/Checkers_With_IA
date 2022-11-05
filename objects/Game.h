@@ -1,10 +1,3 @@
-/*
- * Game.h
- *
- *  Created on: 21 juil. 2015
- *      Author: filipe
- */
-
 #ifndef GAME_H_
 #define GAME_H_
 #include <SDL/SDL.h>
@@ -12,7 +5,7 @@
 #include "Table.h"
 #include "Piece.h"
 #include "Player.h"
-#include "players/AI.h"
+#include "players/IA.h"
 #include "players/Human.h"
 
 class Game : Drawable{
@@ -37,4 +30,4 @@ public:
 	void mouseMove(int x, int y);
 };
 
-#endif /* GAME_H_ */
+#endif

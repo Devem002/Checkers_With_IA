@@ -1,10 +1,3 @@
-/*
- * Piece.h
- *
- *  Created on: 21 juil. 2015
- *      Author: filipe
- */
-
 #ifndef PIECE_H_
 #define PIECE_H_
 #include <utility>
@@ -40,4 +33,4 @@ public:
 	bool isKing();
 };
 
-#endif /* PIECE_H_ */
+#endif

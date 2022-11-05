@@ -1,34 +1,26 @@
-//============================================================================
-// Name        : CheckersAI.cpp
-// Author      : Filipe Caldas
-// Version     :
-//============================================================================
-// main.cpp
 #include <SDL/SDL.h>
 #include <SDL/SDL_image.h>
 #include <string>
 #include "objects/Drawable.h"
-#include "utils/sdlfunctions.h"
+#include "utils/SDLfunctions.h"
 #include "objects/Game.h"
 
 #include <iostream>
 
 using namespace std;
-// Globals:
 
-// foreground, background, screen
 SDL_Surface* fg = NULL, *bg = NULL, *screen = NULL;
 
 const Uint32 fps = 40;
 const Uint32 minframetime = 1000 / fps;
-// Main:
+
 int main(int argc, char* argv[]) {
-    // Try to initialize SDL:
+    // Intento de iniciar el SDL
     if (SDL_Init(SDL_INIT_EVERYTHING) == -1) {
-        return 1; // SDL is being a bitch and failed to initialize itself. Obviously this is not the programmer's fault.
+        return 1;
     }
 
-    // Create the Window :O
+    // Creacion de la ventana
     screen = SDL_SetVideoMode(480,480,32,SDL_SWSURFACE);
 
     Drawable::screen = screen;
@@ -41,20 +33,20 @@ int main(int argc, char* argv[]) {
     }
 
     if (screen == NULL) {
-        return 1; // SDL is being a bitch and the screen failed to load :O
-    } // Or someone changed the image format from 24-bit.. cough.
+        return 1; // En caso de que se caiga la ventana
+    } .
 
-    // Set the caption on the screen like a pro:
+    // Setea el caption
     SDL_WM_SetCaption("CheckersAI", NULL);
 
 
-    // As the images are not 32-bit like the screen, we have to change them to 32-bit
+    // Setea imagenes y ventana a 32 bits
     applySurface(0, 0, bg, screen);
     applySurface(180, 140, fg, screen);
 
-    // Update the screen:
+    // Recarga la pantalla
     if (SDL_Flip(screen) == -1) {
-        return 1; // The screen failed to be updated...
+        return 1;
     }
 
     Game game;
@@ -90,6 +82,5 @@ int main(int argc, char* argv[]) {
 
     }
 
-    // Return 0.
     return 0;
 }

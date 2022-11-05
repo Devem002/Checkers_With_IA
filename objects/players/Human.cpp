@@ -1,10 +1,3 @@
-/*
- * Human.cpp
- *
- *  Created on: 2 août 2015
- *      Author: Filipe
- */
-
 #include "Human.h"
 #include "../Piece.h"
 #include <iostream>

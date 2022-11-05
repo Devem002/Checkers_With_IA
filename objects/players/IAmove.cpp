@@ -1,10 +1,6 @@
-#include "AI.h"
-#include "AITable.h"
+#include "IA.h"
+#include "IATable.h"
 
-
-/*
- * Create a GameMove for AI
- */
 AImove::AImove(position from, position to, int score, AImove * parent, AITable tnew){
 	this->score = score;
 	m.start = from;
@@ -17,7 +13,6 @@ vector<AImove *> AI::possibleMovesForPiece(Piece &p, AImove *parent){
 	vector<AImove *> moveList;
 	TableBase * table;
 
-	//go to parent level to get table
 	if(parent == NULL)
 		table = this->table;
 	else
@@ -31,7 +26,7 @@ vector<AImove *> AI::possibleMovesForPiece(Piece &p, AImove *parent){
 
 	if(p.isKing()){
 		for(int i = 0; i < 4; i++){
-		//generate four possible directions
+		//genera las posibles direcciones de la ficha rey
 			int dX, dY;
 			if(i == 0){
 				dX = 1; dY = 1;
@@ -56,7 +51,6 @@ vector<AImove *> AI::possibleMovesForPiece(Piece &p, AImove *parent){
 				Piece *pe = table->getPieceAt(move);
 				if(pe == NULL){
 					if(wasLastPieceEnemy){
-						//kill & move!
 						AITable newTable(*(table));
 						newTable.executeMove(pNow, move, p.getColor());
 						AImove *pMove = new AImove(pNow, move, 1 * dScore, parent, newTable);
@@ -100,9 +94,7 @@ vector<AImove *> AI::possibleMovesForPiece(Piece &p, AImove *parent){
 					moveList.push_back(pMove);
 				}
 			}
-		//there is an enemy there
 		}else if(table->getPieceAt(possible1)->getColor() != this->color ){
-			//check next case!
 			position possible1C2 = possible1;
 			possible1C2.second += dPos;
 			possible1C2.first -= 1;
@@ -131,7 +123,6 @@ vector<AImove *> AI::possibleMovesForPiece(Piece &p, AImove *parent){
 				}
 			}
 		}else if(table->getPieceAt(possible2)->getColor() != this->color ){
-			//check next case!
 			position possible2C2 = possible2;
 			possible2C2.second += dPos;
 			possible2C2.first += 1;

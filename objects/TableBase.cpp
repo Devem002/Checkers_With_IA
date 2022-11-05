@@ -1,14 +1,6 @@
-/*
- * TableBase.cpp
- *
- *  Created on: Oct 20, 2015
- *      Author: fcaldas
- */
-
 #include "TableBase.h"
 
 TableBase::TableBase(pc_color colorup){
-	//populate the table
 	int row = 0;
 	this->color_up = colorup;
 	for(int i = 0; i < 12; i++){
@@ -99,14 +91,6 @@ gameState TableBase::executeMove(position &from, position &to, pc_color pcolor){
 	}
 }
 
-/* Check if a movement is valid, sends two positions
- * returns int.
- *
- * ret:
- * 			0: ok
- * 		   -1: invalid
- *		   >0: there are pieces to be removed
- */
 int TableBase::isMoveValid(position &initial, position &final, pc_color pcolor){
 	Piece *toMove = this->getPiece(initial,pcolor);
 	bool isKing = toMove->isKing();
@@ -147,7 +131,6 @@ int TableBase::isMoveValid(position &initial, position &final, pc_color pcolor){
 					return 1;
 			}
 		}else{
-		//playing from bottom
 			if(isLeftMove){
 				position pLook = initial;
 				pLook.first -= 1;
@@ -181,8 +164,7 @@ int TableBase::isMoveValid(position &initial, position &final, pc_color pcolor){
 		   final.first >= 0 && final.first <= 7 &&
 		   final.second >= 0 && final.second <= 7 &&
 		   final.first != initial.first){
-			//now check for other pieces on the path
-			//and on target case
+
 			if(this->getPieceAt(final) != NULL){
 			    return -1;
 			}
@@ -192,7 +174,7 @@ int TableBase::isMoveValid(position &initial, position &final, pc_color pcolor){
 			dY = (final.second- initial.second)/abs(final.second - initial.second);
 			int i = initial.first + dX;
 			int j = initial.second + dY;
-			//search for pieces on the line!
+			// Busca piezas en la matriz
 			for(i,j; i != final.first && j != final.second; i += dX, j += dY){
 				position pTemp;
 				pTemp.first = i;
@@ -218,9 +200,6 @@ int TableBase::isMoveValid(position &initial, position &final, pc_color pcolor){
 	return -1;
 }
 
-/* Remove a killed piece from the table
- *
- */
 void TableBase::removeKilled(position &initial, position &final, pc_color pcolor){
 	Piece *toMove = this->getPiece(initial,pcolor);
 	bool isKing = toMove->isKing();

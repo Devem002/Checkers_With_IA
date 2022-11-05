@@ -1,14 +1,7 @@
-/*
- * Table.h
- *
- *  Created on: 21 juil. 2015
- *      Author: filipe
- */
-
 #ifndef TABLE_H_
 #define TABLE_H_
 
-#include "../utils/sdlfunctions.h"
+#include "../utils/SDLfunctions.h"
 #include "Drawable.h"
 #include <vector>
 #include "Piece.h"
@@ -29,4 +22,4 @@ public:
 
 };
 
-#endif /* TABLE_H_ */
+#endif

@@ -28,7 +28,7 @@ private:
 	void checkPiecePromotion(Piece *p, position &to, pc_color pcolor);
 public:
 	vector<Piece> pcWhite, pcBlack;
-	pc_color color_up; //check if white pieces are on the upper part
+	pc_color color_up;
 
 	TableBase();
 	TableBase(pc_color colorup);
@@ -40,4 +40,4 @@ public:
 	Piece* getPieceAt(position p);
 };
 
-#endif /* TABLEBASE_H_ */
+#endif

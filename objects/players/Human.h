@@ -1,10 +1,3 @@
-/*
- * Human.h
- *
- *  Created on: 2 août 2015
- *      Author: filipe
- */
-
 #ifndef HUMAN_H_
 #define HUMAN_H_
 
@@ -29,4 +22,4 @@ public:
 	virtual ~Human();
 };
 
-#endif /* HUMAN_H_ */
+#endif

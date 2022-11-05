@@ -1,10 +1,3 @@
-/*
- * Game.cpp
- *
- *  Created on: 21 juil. 2015
- *      Author: filipe
- */
-
 #include "Game.h"
 #include <iostream>
 
@@ -42,9 +35,9 @@ void Game::play(){
 
 	GameMove * pMove = aPlayer->play();
 
-	//check if player returned a movement
+
 	if(pMove != NULL){
-		//if it is valid then we execute it
+
 		if(this->table.isMoveValid(pMove->start,
 								   pMove->end,
 								   aPlayer->getColor()) >= 0)
@@ -54,7 +47,7 @@ void Game::play(){
 											 pMove->end,
 											 aPlayer->getColor());
 			if(gs == GAME_OK){
-				//change turn
+				//cambio de turno
 				this->active_player =  (this->active_player == BLACK) ? WHITE : BLACK;
 			}else if(gs == GAME_POINT && aPlayer->isHuman() == false){
 				SDL_Delay(500);
