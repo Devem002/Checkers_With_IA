@@ -8,7 +8,7 @@
 #ifndef SDLFUNCTIONS_H_
 #define SDLFUNCTIONS_H_
 
-#include <SDL.h>
+#include <SDL/SDL.h>
 #include <string>
 
 SDL_Surface* loadIMG(std::string); // Loads an image to the screen

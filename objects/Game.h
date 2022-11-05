@@ -7,7 +7,7 @@
 
 #ifndef GAME_H_
 #define GAME_H_
-#include <SDL.h>
+#include <SDL/SDL.h>
 
 #include "Table.h"
 #include "Piece.h"
