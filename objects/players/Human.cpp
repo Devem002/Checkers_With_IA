@@ -43,9 +43,9 @@ void Human::click(int x, int y){
 			moveToExecute = new GameMove;
 			moveToExecute->start = selected_case;
 			moveToExecute->end = pos;
-			cout<<"Move set at player"<<endl;
+			//cout<<"Move set at player"<<endl;
 		}else{
-			cout<<"Invalid move!"<<endl;
+			//cout<<"Invalid move!"<<endl;
 		}
 	}
 }

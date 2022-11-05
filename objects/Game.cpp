@@ -42,7 +42,7 @@ void Game::play(){
 								   pMove->end,
 								   aPlayer->getColor()) >= 0)
 		{
-			cout<<"Executing move!"<<endl;
+			//cout<<"Executing move!"<<endl;
 			gameState gs = table.executeMove(pMove->start,
 											 pMove->end,
 											 aPlayer->getColor());
@@ -53,7 +53,7 @@ void Game::play(){
 				SDL_Delay(500);
 			}
 		}else{
-			cout<<"Invalid move to : "<<pMove->end.first <<","<<pMove->end.second <<endl;
+			//cout<<"Invalid move to : "<<pMove->end.first <<","<<pMove->end.second <<endl;
 		}
 		delete pMove;
 	}

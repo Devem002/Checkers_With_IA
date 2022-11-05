@@ -9,7 +9,7 @@ SDL_Surface * Drawable::screen;
 
 void Drawable::loadIMG(string filename, string id) {
     if(surfaces.find(id) != surfaces.end()){
-    	cout<<"Image "<<id<<" already loaded"<<endl;
+    	//cout<<"Image "<<id<<" already loaded"<<endl;
     	return;
     }
     SDL_Surface* loadedSurface = IMG_Load(filename.c_str());
@@ -30,7 +30,7 @@ void Drawable::applySurface(int x, int y, string id, SDL_Surface* destination) {
 }
 
 Drawable::Drawable(){
-	std::cout<<"Calling drawable() again!!!!"<<std::endl<<std::flush;
+	//cout<<"Calling drawable() again!!!!"<<endl<<flush;
 }
 
 Drawable::~Drawable(){

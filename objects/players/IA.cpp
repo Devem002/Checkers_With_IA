@@ -50,7 +50,7 @@ GameMove * AI::play(){
 		}
 		//siguente rama
 		nowList = nextList;
-		std::cout<<"Level:"<<i<<" possibilities:"<<nowList.size()<<std::endl;
+		cout<<"Pieza:"<<i<<" movimientos posibles: "<<nowList.size()<<endl;
 		nextList.clear();
 	}
 
@@ -59,7 +59,7 @@ GameMove * AI::play(){
 	AImove *aiMove = getBestMove(moveList,0, this->maxDepth);
 	retMove->start = aiMove->m.start;
 	retMove->end   = aiMove->m.end;
-	cout<<"Size of list = "<<moveList.size()<<endl;
+	//cout<<"Size of list = "<<moveList.size()<<endl;
 
 	this->clearTree(moveList);
 
